@@ -1,0 +1,30 @@
+.buttonList {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonListItem:not(:last-child) {
+  margin-right: 10px;
+}
+
+.buttonListBtn {
+  width: 100px;
+  height: 30px;
+
+  color: #fff;
+  font-size: 1em;
+
+  background-color: rgb(0, 207, 243);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transform: scale(1);
+  transition: background-color 250ms linear, transform 250ms linear;
+}
+
+.buttonListBtn:hover,
+.buttonListBtn:focus {
+  background-color: rgb(52, 170, 42);
+  transform: scale(1.1);
+}
