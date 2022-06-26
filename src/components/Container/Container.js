@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import s from './Container.module.css';
 
 const Container = ({ children }) => {
@@ -5,3 +7,7 @@ const Container = ({ children }) => {
 };
 
 export default Container;
+
+Container.propTypes = {
+  children: PropTypes.node.isRequired,
+};
